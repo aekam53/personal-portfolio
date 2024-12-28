@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times checkbar"onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars checkbar" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Senior Software Engineer</p>
+                <h1>Hi, I'm <span>Aekamjot Singh</span><br> From Canada</h1>
+            </div>
+        </div>
+    </div>
+ <!-- --------------about---------- --> 
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/me.JPEG">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am Aekamjot Singh, a highly motivated Software Engineer based in Toronto, ON, Canada, 
+                    with a strong background in Software Engineering. I specialize in backend development, cloud infrastructure, and data-driven decision-making. 
+                    I thrive in dynamic environments and aim to deliver impactful software solutions. Currently pursuing my MEng in Software Engineering from Western University.
+                </p>
+                <div class="tab-titles">    
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>GoLang, Java, Python, JavaScript, NodeJS, SQL, C++, PowerShell</li>
+                        <li><span>Frameworks & Tools</span><br>Jenkins, RASA, Istio, GIT, Kafka, Grafana, Redpanda, React</li>
+                        <li><span>Databases</span><br>MySQL, MongoDB, ScyllaDb, Redis, Cassandra, Oracle, SQL Server</li>
+                        <li><span>Cloud Technologies</span><br>Google Cloud (GCP), Kubernetes, Docker</li>
+                        <li><span>Data & Analytics</span><br>Data-driven decision-making, Risk Management, Statistical Analysis, Business Intelligence</li>
+                        <li><span>CI/CD & DevOps</span><br> Jenkins, Groovy, Artifactory</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>ShareChat/Moj | Senior Software Developer | Bengaluru, India | 01/2022 - 08/2024</span><br></li>
+                        <li>Led the end-to-end development of an AdTech system, optimizing product offerings through data-driven insights.</li>
+                        <li>Spearheaded cost-saving initiatives by migrating from Node.js to GoLang, enhancing system performance by 20% and
+                            reducing operational costs.</li>
+                        <li>Implemented custom pacing mechanisms to ensure ad delivery aligned with campaign objectives, optimizing customer
+                            engagement and product strategy, resulting in a 10% increase in revenue.</li>
+                        <li>Architected and implemented advanced targeting rules and frequency capping mechanisms, driving personalized user
+                            experiences.</li>
+                        <li>Utilized data analysis to optimize ad campaigns, contributing to increased profitability and customer satisfaction.</li>
+                        <li>Developed efficient backend processes, decreasing API response time by 10 milliseconds, resulting in a smoother user
+                                experience.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Western University | Master of Engineering | London, Ontario, Canada | 08/2024 - Present</span><br></li>
+                        <li>GPA: 4.0/4.0</li>
+                        <li>Specialization: Cloud Technologies, Machine Learning, Data Analytics</li>
+                        <li><span>Thapar Institute of Enginnering and Technology | Bachelor of Computer Engineering  | Patiala, Punjab, India | 08/2017 - 07/2021</span><br></li>
+                        <li>GPA: 4.0/4.0</li>
+                        <li>Specialization: Software Engineering, Operating Systems, Networking, Artificial Intelligence
+                            Merit Scholarship Recipient (3 consecutive years)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+
+<!-- --------------services---------- -->  
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Backend Engineer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fas fa-crop"></i>
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Machine Learning</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------------services---------- -->  
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="work-1">
+                <div class="layer">
+                    <h3>Build the multiple backend services</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est odio hic accusantium porro provident dicta ut rem voluptatibus labore. Nam minima vel maxime? Perspiciatis pariatur repudiandae ut sed reiciendis porro!</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="work-2">
+                <div class="layer">
+                    <h3>Build the multiple backend services</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est odio hic accusantium porro provident dicta ut rem voluptatibus labore. Nam minima vel maxime? Perspiciatis pariatur repudiandae ut sed reiciendis porro!</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="work-3">
+                <div class="layer">
+                    <h3>Build the multiple backend services</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est odio hic accusantium porro provident dicta ut rem voluptatibus labore. Nam minima vel maxime? Perspiciatis pariatur repudiandae ut sed reiciendis porro!</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- --------------contact---------- -->  
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> aekam59@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +1-(647)-717-4866</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/aekamjot-singh-66b466195/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/aeki22/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/aekam.bhatia53"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="images/AekamjotS-Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Created By: Aekam!.<i class="fa-solid fa-heart"></i></p>
+    </div>
+ </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzlzTx9UfmoGocyAHJXERmqPGNNEFRYhaPw13gXhCA9fOpEGeN1cfrRzH5jGDPFvjXl/exec'   
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, {
+            method: 'POST',
+            body: new FormData(form),
+        })
+        .then(data => {
+            if (data.status === 200) {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(() => msg.innerHTML = "", 5000);
+                form.reset();
+            } else {
+                console.log(data);
+                throw new Error(data.message);
+            }
+        })
+        .catch(error => {
+            console.error('Error!', error);
+            msg.innerHTML = "Error sending message";
+            form.reset();
+        });
+    });
+</script>
+</body>
+</html>
