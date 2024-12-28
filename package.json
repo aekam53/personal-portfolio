@@ -1,0 +1,13 @@
+{
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "Aekamjot Singh's portfolio site",
+    "main": "backend/server.js",
+    "scripts": {
+      "start": "node backend/server.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1"
+    }
+  }
+  
