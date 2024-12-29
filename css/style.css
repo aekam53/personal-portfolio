@@ -35,15 +35,8 @@ nav{
     width: 140px;
 }
 
-ul li {
-    margin-bottom: 10px; /* Adds spacing between list items */
-}
 ul li b {
-    color: #b54769; /* Makes the bold text more visually appealing */
-}
-p {
-    margin-top: 10px;
-    font-size: 16px; /* Adjust font size for readability */
+    color: #b54769;
 }
 
 nav ul li {
